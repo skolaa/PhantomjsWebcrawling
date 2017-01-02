@@ -19,6 +19,6 @@ class GoogleSearchResultCrawlerTester {
     public static void main(String[] args) {
         GoogleSearchResultCrawler googleSearchResultCrawler = new GoogleSearchResultCrawler();
         System.out.println("Title --------------------> Href");
-        googleSearchResultCrawler.searchTermInGoogle("phantomjs").forEach(googleSearchResult -> System.out.println(googleSearchResult.getSearchResultTitle() + "-------------------->" + googleSearchResult.getSearchResultHref()));
+        googleSearchResultCrawler.searchTermInGoogleUsingFormSubmission("phantomjs").forEach(googleSearchResult -> System.out.println(googleSearchResult.getSearchResultTitle() + "-------------------->" + googleSearchResult.getSearchResultHref()));
     }
 }
